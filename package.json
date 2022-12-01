@@ -1,0 +1,34 @@
+{
+  "name": "aoc-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint:fix": "ts-standard --fix",
+    "run": "ts-node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArttuOll/aoc-2022.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArttuOll/aoc-2022/issues"
+  },
+  "homepage": "https://github.com/ArttuOll/aoc-2022#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "ts-node": "^10.9.1",
+    "ts-standard": "^12.0.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "fp-ts": "^2.13.1",
+    "prettier": "^2.8.0"
+  }
+}
