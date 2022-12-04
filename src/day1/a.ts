@@ -1,14 +1,10 @@
-import { readInput } from "../util";
+import { readInput, sum } from "../util";
 import { max } from "fp-ts/Ord";
 import { map, reduce } from "fp-ts/ReadonlyArray";
 import { flow } from "fp-ts/function";
 import { split } from "fp-ts/string";
 import { Ord as OrdNumber } from "fp-ts/number";
 
-const sum = reduce<number, number>(
-  0,
-  (value, accumulator) => value + accumulator
-);
 const stringToNumber = map(Number);
 const inputToElfCalorieArrays = flow(
   split("\n\n"),
