@@ -16,11 +16,12 @@ const inputToElfCalorieArrays = flow(
 );
 
 const result = flow(
+  readInput(1),
   inputToElfCalorieArrays,
   map(sum),
   sort(reverse(OrdNumber)),
   takeLeft(3),
   sum
-)(readInput(1));
+);
 
-console.log(result);
+console.log(result());

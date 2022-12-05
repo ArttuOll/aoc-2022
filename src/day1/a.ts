@@ -12,6 +12,6 @@ const inputToElfCalorieArrays = flow(
 );
 const maxArray = reduce(0, max(OrdNumber));
 
-const result = flow(inputToElfCalorieArrays, map(sum), maxArray)(readInput(1));
+const result = flow(readInput(1), inputToElfCalorieArrays, map(sum), maxArray);
 
-console.log(result);
+console.log(result());
