@@ -2,7 +2,8 @@ import { flow } from "fp-ts/function";
 import { split } from "fp-ts/string";
 import { filter, map } from "fp-ts/ReadonlyArray";
 import { fst, snd } from "fp-ts/ReadonlyTuple";
-import { readInput, sum } from "../util";
+import { readInput } from "../util";
+import { sum } from "ramda";
 
 enum Rps {
   Rock = "A",

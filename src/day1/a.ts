@@ -1,9 +1,10 @@
-import { readInput, sum } from "../util";
+import { readInput } from "../util";
 import { max } from "fp-ts/Ord";
 import { map, reduce } from "fp-ts/ReadonlyArray";
 import { flow } from "fp-ts/function";
 import { split } from "fp-ts/string";
 import { Ord as OrdNumber } from "fp-ts/number";
+import { sum } from "ramda";
 
 const stringToNumber = map(Number);
 const inputToElfCalorieArrays = flow(
